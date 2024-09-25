@@ -5,7 +5,7 @@ let handler = async(m, { isOwner, isAdmin, conn, text, participants, args, comma
   }
   let pesan = args.join` `
   let oi = `*𝙀𝙏𝙄𝙌𝙐𝙀𝙏𝘼𝙎:* ${pesan}`
-  let teks = `*> Tʜᴇ Sᴜɴ Is Bʀɪɢʜᴛ Bᴜᴛ Nᴏᴛ As Bʀɪɢʜᴛ As Mᴇ ☀️*\n\n ${oi}\n\n➥ _*@08._santiago07:*_\n`
+  let teks = `*> ACTIVENSE MANCOS*\n\n ${oi}\n\n➥ _*@08._santiago07:*_\n`
   for (let mem of participants) {
   teks += `🥷🏼 @${mem.id.split('@')[0]}\n`}
   teks += `└ *SANTX BOT ⇝ @08._santiago07*`
