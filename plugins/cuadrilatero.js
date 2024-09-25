@@ -25,29 +25,35 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `╭──────⚔──────╮
-ㅤㅤ4 𝗩𝗘𝗥𝗦𝗨𝗦 4
-╰──────⚔──────╯
-╭──────────────╮
-│ 𝗠𝗢𝗗𝗢: vv2
-│
-│       ⏱️ 𝗛𝗢𝗥𝗔𝗥𝗜𝗢
-│ • 23 PM 🇵🇪
-│ • 00 AM 🇨🇱🇧🇴🇵🇾
-│ • 01 AM 🇦🇷🇺🇾
-│ •  6  AM 🇪🇸
-│
-│ » 𝗘𝗦𝗖𝗨𝗔𝗗𝗥𝗔
-│
-│ 👑 ➤ 
-│ ⚜️ ➤ 
-│ ⚜️ ➤ 
-│ ⚜️ ➤ 
-│
-│ » 𝗦𝗨𝗣𝗟𝗘𝗡𝗧𝗘:
-│ ⚜️ ➤ 
-│ ⚜️ ➤ 
-╰─────────────╯`.trim();
+    const str = `🔥🐺 CUADRILÁTERO LEGEND 🐺🔥
+
+⏰ HORA: 🇲🇽 México | 🇨🇴 Colombia
+🎨 COLOR: 
+🏟 CASILLAS: 
+
+👥 ESCUADRAS
+
+🔹 ESCUADRA 1 
+   👑 
+   🥷🏻 
+   🥷🏻 
+   🥷🏻
+
+🔸 ESCUADRA 2
+   👑 
+   🥷🏻 
+   🥷🏻 
+   🥷🏻 
+
+🔹 ESCUADRA 3
+   👑 
+   🥷🏻
+   🥷🏻 
+   🥷🏻 
+
+🔆 RESERVAS
+   🥷🏻 
+   🥷🏻`.trim()
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, './src/assets/audio/01J673Y3TGCFF1D548242AX68Q.mp3', null, m, true, { type: 'audioMessage', ptt: true})
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
@@ -61,7 +67,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     conn.reply(m.chat, tradutor.texto1[3], m);
   }
 };
-handler.command = /^(4vs4a6|4vs4vv6)$/i;
+handler.command = /^(cuadri|CUADRI)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;
